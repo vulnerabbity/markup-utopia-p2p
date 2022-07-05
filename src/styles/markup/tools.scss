@@ -7,21 +7,6 @@
     flex-direction: column;
   }
   &__title {
-    display: block;
-    margin: 71rem auto;
-    font-size: 22rem;
-    text-align: center;
-
-    @media ($small-q) {
-      font-size: 25rem;
-    }
-    @media ($medium-q) {
-      font-size: 30rem;
-    }
-
-    @media ($large-q) {
-      font-size: 40rem;
-    }
   }
 
   &__list {
