@@ -60,10 +60,18 @@ const config: IWebpackConfig = {
           from: `${source}/favicon.ico`,
           to: distributive,
         },
+        {
+          from: `${source}/assets`,
+          to: distributive,
+        },
       ],
     }),
     new TerserWebpackPlugin(),
   ],
+
+  performance: {
+    hints: false,
+  },
 
   module: {
     rules: [
