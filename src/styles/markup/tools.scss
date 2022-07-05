@@ -1,5 +1,8 @@
 .tools {
+  position: relative;
   &__container {
+    position: relative;
+
     display: flex;
     flex-direction: column;
   }
@@ -40,6 +43,36 @@
   }
   &__button {
     margin-top: 20rem;
+  }
+  &__background {
+    position: absolute;
+    top: 40rem;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 1840rem;
+
+    z-index: -1;
+  }
+
+  &__image-top-left {
+    position: absolute;
+    top: 40rem;
+    left: -90rem;
+
+    width: 130rem;
+
+    @media ($medium-q) {
+      top: 20rem;
+      left: -200rem;
+      width: 266rem;
+    }
+  }
+  &__image-right {
+    position: absolute;
+    right: -500rem;
+    top: 50%;
+    transform: translateY(-40%);
   }
 }
 
