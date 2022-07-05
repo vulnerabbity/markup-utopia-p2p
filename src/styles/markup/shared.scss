@@ -1,0 +1,60 @@
+.container {
+  display: flex;
+  margin: 0 auto;
+
+  max-width: 1200rem;
+  padding: 0px 15rem;
+}
+
+.wrapper {
+  min-height: 100%;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 14rem 15rem;
+  border-radius: 9px;
+
+  font-size: 14rem;
+
+  @media ($medium-q) {
+    padding-left: 35rem;
+    padding-right: 35rem;
+
+    font-size: 16rem;
+  }
+}
+
+.button_large {
+  padding-left: 35rem;
+  padding-right: 35rem;
+
+  @media ($medium-q) {
+    padding-left: 50rem;
+    padding-right: 50rem;
+  }
+
+  @media ($large-q) {
+    padding-left: 70rem;
+    padding-right: 70rem;
+  }
+}
+
+.button_primary {
+  background: var(--gradient);
+  color: var(--light);
+}
+
+.button_primary-transparent {
+  border: solid var(--primary) 2rem;
+  background-color: transparent;
+}
+
+.button_light {
+  background-color: var(--light);
+}

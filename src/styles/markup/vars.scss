@@ -1,0 +1,19 @@
+:root {
+  // colors
+  --primary: #87b670;
+  --text-dark: #3c3f34;
+  --light: white;
+  --gradient: linear-gradient(98.8deg, #97bc5d 0.78%, #c0d997 98.41%);
+}
+
+body {
+  color: var(--text-dark);
+}
+
+$large: 1200px;
+$medium: 768px;
+$small: 480px;
+
+$large-q: "min-width: 1200px";
+$medium-q: "min-width: 768px";
+$small-q: "min-width: 480px";
