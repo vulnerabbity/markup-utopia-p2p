@@ -10,7 +10,24 @@
 .wrapper {
   min-height: 100%;
   max-width: 100%;
+  overflow-x: hidden;
+}
+
+.visually-hidden {
+  height: 0px;
+  width: 0px;
+  font-size: 0px;
   overflow: hidden;
+}
+
+.content-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.round {
+  border-radius: 9000px;
 }
 
 .ibg {

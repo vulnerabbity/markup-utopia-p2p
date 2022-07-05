@@ -1,0 +1,93 @@
+.tools {
+  &__container {
+    display: flex;
+    flex-direction: column;
+  }
+  &__title {
+    display: block;
+    margin: 71rem auto;
+    font-size: 22rem;
+    text-align: center;
+
+    @media ($small-q) {
+      font-size: 25rem;
+    }
+    @media ($medium-q) {
+      font-size: 30rem;
+    }
+
+    @media ($large-q) {
+      font-size: 40rem;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: space-around;
+  }
+  &__item {
+    margin: 20rem 40rem;
+  }
+  &__buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 60rem;
+    margin-bottom: 20rem;
+  }
+  &__button {
+    margin-top: 20rem;
+  }
+}
+
+.tool-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  max-width: 240rem;
+  text-align: center;
+
+  &__icon-wrapper {
+    width: 103rem;
+    height: 103rem;
+
+    box-shadow: 0px 10px 30px rgba(162, 162, 162, 0.25);
+  }
+
+  &__icon-inner {
+    width: 87rem;
+    height: 87rem;
+
+    box-shadow: 0px 10px 30px rgba(162, 162, 162, 0.25);
+  }
+
+  &__icon {
+    width: 50rem;
+    height: 50rem;
+  }
+
+  &__text-wrapper {
+    > * {
+      margin-top: 15rem;
+    }
+  }
+
+  &__title {
+    font-size: 17rem;
+    margin-top: 25rem;
+
+    @media ($medium-q) {
+      font-size: 20rem;
+    }
+  }
+  &__text {
+    font-size: 14rem;
+    @media ($medium-q) {
+      font-size: 16rem;
+    }
+  }
+}
