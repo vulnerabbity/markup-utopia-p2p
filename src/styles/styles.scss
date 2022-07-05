@@ -2,3 +2,17 @@
 @import "./zeroing.scss";
 @import "./fonts.scss";
 @import "./markup/markup.scss";
+
+html {
+  // makes rem == 1px
+  font-size: 6.25%;
+}
+
+body {
+  font-size: 16rem;
+}
+
+a,
+button {
+  display: block;
+}
