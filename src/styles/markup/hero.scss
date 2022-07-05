@@ -1,0 +1,85 @@
+.hero {
+  position: relative;
+  &__container {
+    position: relative;
+  }
+  &__content {
+    max-width: 520rem;
+    min-height: 629rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  &__content:not(:last-child) {
+    > * {
+      margin-bottom: 20rem;
+    }
+  }
+  &__subtitle {
+    color: var(--primary);
+    font-style: italic;
+    font-size: 18rem;
+    font-weight: 600;
+    text-shadow: 0px 0px 3px rgba(#000000, 0.3);
+
+    @media ($medium-q) {
+      font-size: 22rem;
+      text-shadow: none;
+    }
+
+    @media ($large-q) {
+      font-size: 24rem;
+    }
+  }
+  &__title {
+    font-size: 35rem;
+    @media ($medium-q) {
+      font-size: 40rem;
+    }
+
+    @media ($large-q) {
+      font-size: 55rem;
+    }
+  }
+  &__text {
+    font-size: 14rem;
+
+    @media ($medium-q) {
+      font-size: 17rem;
+    }
+
+    @media ($large-q) {
+      font-size: 20rem;
+    }
+  }
+  &__buttons {
+  }
+  &__button {
+  }
+
+  &__image {
+    position: absolute;
+    top: 0;
+    right: 10%;
+    width: 580rem;
+    z-index: -1;
+
+    opacity: 0.5;
+    @media ($medium-q) {
+      opacity: 1;
+    }
+  }
+
+  &__bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    height: 750rem;
+    margin-top: -130rem;
+    margin-right: -100rem;
+
+    z-index: -2;
+  }
+}

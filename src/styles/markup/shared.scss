@@ -4,12 +4,25 @@
 
   max-width: 1200rem;
   padding: 0px 15rem;
+  overflow: visible;
 }
 
 .wrapper {
   min-height: 100%;
   max-width: 100%;
   overflow: hidden;
+}
+
+.ibg {
+  position: relative;
+  width: 100%;
+  img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
 }
 
 .button {
@@ -21,6 +34,7 @@
   border-radius: 9px;
 
   font-size: 14rem;
+  width: fit-content;
 
   @media ($medium-q) {
     padding-left: 35rem;
