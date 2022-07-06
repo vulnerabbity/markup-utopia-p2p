@@ -64,6 +64,10 @@ const config: IWebpackConfig = {
           from: `${source}/assets`,
           to: distributive,
         },
+        {
+          from: `${source}/fonts`,
+          to: `${distributive}/fonts`,
+        },
       ],
     }),
     new TerserWebpackPlugin(),
@@ -89,7 +93,7 @@ const config: IWebpackConfig = {
           // Creates `style` nodes from JS strings
           "style-loader",
           // Translate CSS into CommonJS
-          "css-loader",
+          { loader: "css-loader", options: { url: false } },
           // Compile scss to css
           "sass-loader",
         ],
