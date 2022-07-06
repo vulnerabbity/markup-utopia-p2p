@@ -53,18 +53,34 @@
 
 .faq {
   margin: 70rem 0;
+  position: relative;
 
   &__faq-item {
     position: relative;
   }
-}
 
-.faq__spacer {
-  display: inline-block;
-  width: 100%;
-  height: 2rem;
+  &__bone {
+    position: absolute;
+    top: -140rem;
 
-  margin: 40rem 0;
+    height: 700rem;
+    width: 100%;
 
-  background-color: #d9d9d9;
+    background-image: url("meshes/bone-3.svg");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: top;
+
+    z-index: -1;
+  }
+
+  &__spacer {
+    display: inline-block;
+    width: 100%;
+    height: 2rem;
+
+    margin: 40rem 0;
+
+    background-color: #d9d9d9;
+  }
 }
