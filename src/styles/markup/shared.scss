@@ -16,6 +16,14 @@
   overflow-x: hidden;
 }
 
+.z-10 {
+  z-index: 10;
+}
+
+.absolute {
+  position: absolute;
+}
+
 .visually-hidden {
   height: 0px;
   width: 0px;
