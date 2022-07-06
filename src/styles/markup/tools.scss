@@ -98,14 +98,9 @@
     font-size: 17rem;
     margin-top: 25rem;
 
-    @media ($medium-q) {
-      font-size: 20rem;
-    }
+    font-size: 20rem;
   }
   &__text {
-    font-size: 14rem;
-    @media ($medium-q) {
-      font-size: 16rem;
-    }
+    font-size: 16rem;
   }
 }
