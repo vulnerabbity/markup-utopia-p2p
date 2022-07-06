@@ -1,5 +1,8 @@
+@import "./features.scss";
+
 .container {
   display: flex;
+  flex-direction: column;
   margin: 0 auto;
 
   max-width: 1200rem;
