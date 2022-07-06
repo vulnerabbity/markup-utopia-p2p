@@ -1,3 +1,5 @@
+$feature-margin: 540rem;
+
 .feature {
   position: relative;
   background-color: var(--primary-light);
@@ -30,14 +32,15 @@
     top: 0;
 
     display: flex;
-    max-width: 833rem;
-    min-height: 400rem;
+    width: 833rem;
+    min-height: 480rem;
 
     border-radius: $border-radius;
+    background-color: var(--primary-light);
   }
 
   &__part_right {
-    left: 540rem;
+    left: $feature-margin;
   }
 
   &__image-container {
@@ -50,15 +53,40 @@
     top: 0;
 
     height: 100%;
-    width: auto;
 
-    object-fit: contain;
+    object-fit: cover;
     object-position: left;
 
     border-radius: $border-radius;
   }
+
+  &__text-content {
+    max-width: $feature-margin - 70rem;
+    padding-left: 70rem;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+
+    > * {
+      margin-bottom: 14rem;
+    }
+  }
+  &__title {
+    font-size: 30rem;
+    line-height: 1.3;
+  }
+  &__text {
+    font-size: 20rem;
+  }
+  &__button {
+  }
 }
 .features {
   &__container {
+  }
+
+  &__feature {
+    margin-bottom: 80rem;
   }
 }
