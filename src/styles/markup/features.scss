@@ -1,8 +1,10 @@
 $feature-margin: 540rem;
 
 .feature {
+  --feature-background: var(--primary-light);
   position: relative;
-  background-color: var(--primary-light);
+  background-color: var(--feature-background);
+  background-image: var(--feature-background);
   border-radius: $border-radius;
 
   display: flex;
@@ -32,11 +34,12 @@ $feature-margin: 540rem;
     top: 0;
 
     display: flex;
-    width: 833rem;
+    width: 780rem;
     min-height: 480rem;
 
     border-radius: $border-radius;
-    background-color: var(--primary-light);
+    background-color: var(--feature-background);
+    background-image: var(--feature-background);
   }
 
   &__part_right {
@@ -82,6 +85,12 @@ $feature-margin: 540rem;
   &__button {
   }
 }
+
+.feature_primary {
+  --feature-background: var(--gradient);
+  color: var(--light);
+}
+
 .features {
   &__container {
   }
