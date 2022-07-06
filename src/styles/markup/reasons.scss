@@ -1,0 +1,140 @@
+.bad-reason {
+  position: relative;
+
+  display: flex;
+  padding: 42rem 72rem;
+
+  flex-direction: column;
+  align-items: center;
+
+  border-radius: 35rem;
+  text-align: center;
+  color: var(--light);
+
+  background-image: var(--gradient);
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: block;
+    width: 100%;
+    height: 100%;
+
+    background-image: url("./meshes/patten.png");
+    opacity: 0.5;
+  }
+
+  &__icon-wrapper {
+    width: 95rem;
+    height: 95rem;
+
+    background-color: var(--light);
+    box-shadow: 0px 10px 30px rgba(162, 162, 162, 0.25);
+  }
+
+  &__icon-wrapper_big {
+    width: 103rem;
+    width: 103rem;
+  }
+
+  &__icon-inner {
+    width: 80rem;
+    height: 80rem;
+
+    background-color: var(--light);
+    box-shadow: 0px 10px 30px rgba(162, 162, 162, 0.25);
+  }
+
+  &__icon-inner_big {
+    width: 87rem;
+    height: 87rem;
+  }
+
+  &__icon {
+    width: 35rem;
+    height: 35rem;
+  }
+
+  &__icon_big {
+    width: 50rem;
+    height: 50rem;
+  }
+
+  &__title {
+    font-size: 20rem;
+    margin: 10rem 0;
+  }
+
+  &__title_big {
+    font-size: 25rem;
+  }
+
+  &__text {
+    font-size: 16rem;
+    line-height: 22.4rem;
+  }
+
+  &__text_big {
+    font-size: 20rem;
+    line-height: 28rem;
+  }
+}
+
+.bad-reason_big {
+  padding: 60rem;
+}
+
+.bad-reasons {
+  &__container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+  }
+
+  &__content {
+    position: relative;
+    display: flex;
+
+    flex-wrap: wrap;
+    justify-content: center;
+    @media ($medium-q) {
+      min-height: 350rem;
+      margin-top: 50rem;
+
+      flex-wrap: nowrap;
+      // at bottom
+      align-items: flex-end;
+
+      justify-content: space-between;
+    }
+  }
+
+  &__bad-reason {
+    max-width: 400rem;
+    margin-bottom: 25rem;
+    @media ($medium-q) {
+      width: min(400rem, 35vw);
+      max-height: 80%;
+    }
+  }
+
+  &__bad-reason_big {
+    width: 500rem;
+    order: -1;
+    @media ($medium-q) {
+      width: min(500rem, 40vw);
+      min-height: 100%;
+
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+
+      order: unset;
+    }
+  }
+}

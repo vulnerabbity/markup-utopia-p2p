@@ -92,7 +92,7 @@
 
 .section-title {
   display: block;
-  margin: 71rem auto;
+  margin: 25rem auto;
   font-size: 22rem;
   text-align: center;
 
@@ -101,9 +101,15 @@
   }
   @media ($medium-q) {
     font-size: 30rem;
+
+    margin-top: 40rem;
+    margin-bottom: 40rem;
   }
 
   @media ($large-q) {
     font-size: 40rem;
+
+    margin-top: 70rem;
+    margin-bottom: 70rem;
   }
 }
