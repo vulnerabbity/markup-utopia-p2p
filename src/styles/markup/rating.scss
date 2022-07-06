@@ -6,10 +6,15 @@
 
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   padding: 30rem 50rem;
 
   &__logo {
     position: relative;
+
+    height: 80rem;
+    object-fit: contain;
+
     margin-top: 10rem;
   }
 
