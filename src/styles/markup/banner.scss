@@ -1,0 +1,38 @@
+.banner {
+  &__container {
+    padding: 88rem 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    color: var(--light);
+    font-weight: 600rem;
+
+    background-image: url("meshes/patten.png"), var(--gradient);
+
+    border-radius: $border-radius;
+  }
+
+  &__container {
+    // margin bottom to all but last
+    > * {
+      &:not(:last-child) {
+        margin-bottom: 25rem;
+      }
+    }
+  }
+
+  &__title {
+    font-size: 30rem;
+
+    @media ($medium-q) {
+      font-size: 40rem;
+    }
+  }
+  &__text {
+  }
+  &__buttons {
+    margin-top: 15rem;
+  }
+}
