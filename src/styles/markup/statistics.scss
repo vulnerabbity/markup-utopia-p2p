@@ -38,7 +38,8 @@
 }
 
 .statistics {
-  margin-bottom: 50rem;
+  position: relative;
+  margin: 100rem 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -50,5 +51,21 @@
   }
   &__item {
     margin-bottom: 100rem;
+  }
+
+  &__bone {
+    position: absolute;
+    top: -200rem;
+
+    background-image: url("meshes/bone-2.svg");
+    background-repeat: no-repeat;
+
+    background-position-x: center;
+    background-position-y: top;
+
+    width: 3000rem;
+    height: 700rem;
+
+    z-index: -1;
   }
 }
