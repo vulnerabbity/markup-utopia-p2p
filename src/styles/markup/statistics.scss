@@ -68,4 +68,16 @@
 
     z-index: -1;
   }
+
+  &__square {
+    position: absolute;
+    right: -180rem;
+    bottom: -100rem;
+
+    height: 266rem;
+    width: 266rem;
+
+    background-image: url("meshes/dots-in-square.svg");
+    background-repeat: no-repeat;
+  }
 }
