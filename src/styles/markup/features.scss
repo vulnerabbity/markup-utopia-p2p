@@ -10,7 +10,7 @@ $feature-margin: 540rem;
   display: flex;
   flex-direction: column;
 
-  @media ($medium-q) {
+  @media ($large-q) {
     flex-direction: row;
   }
 
@@ -38,7 +38,7 @@ $feature-margin: 540rem;
     width: 100%;
     min-height: 480rem;
 
-    @media ($medium-q) {
+    @media ($large-q) {
       width: 650rem;
     }
 
@@ -48,7 +48,7 @@ $feature-margin: 540rem;
   }
 
   &__part_right {
-    @media ($medium-q) {
+    @media ($large-q) {
       left: $feature-margin;
     }
   }
@@ -65,7 +65,7 @@ $feature-margin: 540rem;
     height: 100%;
 
     object-fit: cover;
-    object-position: left;
+    object-position: left bottom;
 
     border-radius: $border-radius;
   }
@@ -81,7 +81,7 @@ $feature-margin: 540rem;
     align-items: center;
     padding: 20rem;
 
-    @media ($medium-q) {
+    @media ($large-q) {
       max-width: $feature-margin - 70rem;
       padding: 0;
       margin: 0;
@@ -112,7 +112,7 @@ $feature-margin: 540rem;
 }
 
 .absolute-above-medium {
-  @media ($medium-q) {
+  @media ($large-q) {
     position: absolute;
   }
 }
